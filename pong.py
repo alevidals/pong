@@ -111,8 +111,8 @@ def redrawGame():
     ball.draw(WIN)
     p1_score = title_font.render(str(p1.score), True, WHITE)
     p2_score = title_font.render(str(p2.score), True, WHITE)
-    WIN.blit(p1_score, (WIDTH // 2 + WIDTH // 4, 50))
-    WIN.blit(p2_score, (WIDTH // 2 - WIDTH // 4, 50))
+    WIN.blit(p1_score, (WIDTH // 2 - WIDTH // 4, 50))
+    WIN.blit(p2_score, (WIDTH // 2 + WIDTH // 4, 50))
     WIN.blit(pygame.transform.scale(separator_img, (1, HEIGHT)), (WIDTH // 2, 0))
     pygame.display.update()
 
